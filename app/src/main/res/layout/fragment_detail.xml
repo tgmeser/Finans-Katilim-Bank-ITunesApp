@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ui.DetailFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBarDetail"
+        android:layout_width="100dp"
+        android:visibility="gone"
+        android:layout_height="100dp"/>
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/ivCoverDetail"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_error" />
+    <TextView
+        android:id="@+id/tvArtistName"
+        android:layout_margin="5dp"
+        android:text="Artist Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvWrapperType"
+        android:text="Wrapper Type"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvCountry"
+        android:text="Country"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvCollectionName"
+        android:text="Collection Name"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvKind"
+        android:text="Kind"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvReleaseDate"
+        android:text="Release Date"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvTrackPrice"
+        android:text="Track Price"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

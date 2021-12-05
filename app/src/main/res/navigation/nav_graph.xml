@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.babyapps.itunesapp.ui.ListFragment"
+        android:label="List"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_listFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_audioBookFragment"
+            app:destination="@id/audioBookFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_trackFragment"
+            app:destination="@id/trackFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_musicVideoFragment"
+            app:destination="@id/musicVideoFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_appFragment"
+            app:destination="@id/appFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.babyapps.itunesapp.ui.DetailFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="result"
+            app:argType="com.babyapps.itunesapp.data.model.Result" />
+    </fragment>
+    <fragment
+        android:id="@+id/trackFragment"
+        android:name="com.babyapps.itunesapp.ui.TrackFragment"
+        android:label="fragment_track"
+        tools:layout="@layout/fragment_track" />
+    <fragment
+        android:id="@+id/audioBookFragment"
+        android:name="com.babyapps.itunesapp.ui.AudioBookFragment"
+        android:label="fragment_audiobook"
+        tools:layout="@layout/fragment_audiobook" />
+    <fragment
+        android:id="@+id/musicVideoFragment"
+        android:name="com.babyapps.itunesapp.ui.MusicVideoFragment"
+        android:label="fragment_musicvideo"
+        tools:layout="@layout/fragment_musicvideo" />
+    <fragment
+        android:id="@+id/appFragment"
+        android:name="com.babyapps.itunesapp.ui.AppFragment"
+        android:label="fragment_app"
+        tools:layout="@layout/fragment_app" />
+</navigation>
