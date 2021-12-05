@@ -11,3 +11,5 @@ Kullanılan Android Bileşenleri
   - Retrofit
   - Glide
   - Navigation Component
+
+©Mücteba Eser
